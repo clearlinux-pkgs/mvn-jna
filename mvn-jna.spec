@@ -4,7 +4,7 @@
 #
 Name     : mvn-jna
 Version  : 3.4.0
-Release  : 1
+Release  : 2
 URL      : https://github.com/java-native-access/jna/archive/3.4.0.tar.gz
 Source0  : https://github.com/java-native-access/jna/archive/3.4.0.tar.gz
 Source1  : https://repo1.maven.org/maven2/net/java/dev/jna/jna/3.4.0/jna-3.4.0.pom
@@ -13,6 +13,8 @@ Source3  : https://repo1.maven.org/maven2/net/java/dev/jna/jna/3.5.2/jna-3.5.2.p
 Source4  : https://repo1.maven.org/maven2/net/java/dev/jna/platform/3.4.0/platform-3.4.0.pom
 Source5  : https://repo1.maven.org/maven2/net/java/dev/jna/platform/3.5.2/platform-3.5.2.jar
 Source6  : https://repo1.maven.org/maven2/net/java/dev/jna/platform/3.5.2/platform-3.5.2.pom
+Source7  : https://repo1.maven.org/maven2/org/elasticsearch/jna/4.4.0-1/jna-4.4.0-1.jar
+Source8  : https://repo1.maven.org/maven2/org/elasticsearch/jna/4.4.0-1/jna-4.4.0-1.pom
 Summary  : Library supporting Foreign Function Interfaces
 Group    : Development/Tools
 License  : LGPL-2.1 MIT
@@ -55,6 +57,12 @@ cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/net/java/dev/jna/platfo
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/net/java/dev/jna/platform/3.5.2
 cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/net/java/dev/jna/platform/3.5.2
 
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/elasticsearch/jna/4.4.0-1
+cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/org/elasticsearch/jna/4.4.0-1
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/elasticsearch/jna/4.4.0-1
+cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/org/elasticsearch/jna/4.4.0-1
+
 
 %files
 %defattr(-,root,root,-)
@@ -67,3 +75,5 @@ cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/net/java/dev/jna/platfo
 /usr/share/java/.m2/repository/net/java/dev/jna/platform/3.4.0/platform-3.4.0.pom
 /usr/share/java/.m2/repository/net/java/dev/jna/platform/3.5.2/platform-3.5.2.jar
 /usr/share/java/.m2/repository/net/java/dev/jna/platform/3.5.2/platform-3.5.2.pom
+/usr/share/java/.m2/repository/org/elasticsearch/jna/4.4.0-1/jna-4.4.0-1.jar
+/usr/share/java/.m2/repository/org/elasticsearch/jna/4.4.0-1/jna-4.4.0-1.pom
