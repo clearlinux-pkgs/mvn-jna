@@ -4,22 +4,30 @@
 #
 Name     : mvn-jna
 Version  : 3.4.0
-Release  : 5
+Release  : 6
 URL      : https://github.com/java-native-access/jna/archive/3.4.0.tar.gz
 Source0  : https://github.com/java-native-access/jna/archive/3.4.0.tar.gz
 Source1  : https://repo.maven.apache.org/maven2/net/java/dev/jna/jna-platform/4.1.0/jna-platform-4.1.0.jar
 Source2  : https://repo.maven.apache.org/maven2/net/java/dev/jna/jna-platform/4.1.0/jna-platform-4.1.0.pom
-Source3  : https://repo.maven.apache.org/maven2/net/java/dev/jna/jna/4.1.0/jna-4.1.0-sources.jar
-Source4  : https://repo1.maven.org/maven2/net/java/dev/jna/jna/3.4.0/jna-3.4.0.pom
-Source5  : https://repo1.maven.org/maven2/net/java/dev/jna/jna/3.5.2/jna-3.5.2.jar
-Source6  : https://repo1.maven.org/maven2/net/java/dev/jna/jna/3.5.2/jna-3.5.2.pom
-Source7  : https://repo1.maven.org/maven2/net/java/dev/jna/jna/4.1.0/jna-4.1.0.jar
-Source8  : https://repo1.maven.org/maven2/net/java/dev/jna/jna/4.1.0/jna-4.1.0.pom
-Source9  : https://repo1.maven.org/maven2/net/java/dev/jna/platform/3.4.0/platform-3.4.0.pom
-Source10  : https://repo1.maven.org/maven2/net/java/dev/jna/platform/3.5.2/platform-3.5.2.jar
-Source11  : https://repo1.maven.org/maven2/net/java/dev/jna/platform/3.5.2/platform-3.5.2.pom
-Source12  : https://repo1.maven.org/maven2/org/elasticsearch/jna/4.4.0-1/jna-4.4.0-1.jar
-Source13  : https://repo1.maven.org/maven2/org/elasticsearch/jna/4.4.0-1/jna-4.4.0-1.pom
+Source3  : https://repo.maven.apache.org/maven2/net/java/dev/jna/jna-platform/4.2.2/jna-platform-4.2.2.jar
+Source4  : https://repo.maven.apache.org/maven2/net/java/dev/jna/jna-platform/4.2.2/jna-platform-4.2.2.pom
+Source5  : https://repo.maven.apache.org/maven2/net/java/dev/jna/jna/4.1.0/jna-4.1.0-sources.jar
+Source6  : https://repo1.maven.org/maven2/net/java/dev/jna/jna/3.4.0/jna-3.4.0.pom
+Source7  : https://repo1.maven.org/maven2/net/java/dev/jna/jna/3.5.2/jna-3.5.2.jar
+Source8  : https://repo1.maven.org/maven2/net/java/dev/jna/jna/3.5.2/jna-3.5.2.pom
+Source9  : https://repo1.maven.org/maven2/net/java/dev/jna/jna/4.0.0/jna-4.0.0.jar
+Source10  : https://repo1.maven.org/maven2/net/java/dev/jna/jna/4.0.0/jna-4.0.0.pom
+Source11  : https://repo1.maven.org/maven2/net/java/dev/jna/jna/4.1.0/jna-4.1.0.jar
+Source12  : https://repo1.maven.org/maven2/net/java/dev/jna/jna/4.1.0/jna-4.1.0.pom
+Source13  : https://repo1.maven.org/maven2/net/java/dev/jna/jna/4.2.2/jna-4.2.2.jar
+Source14  : https://repo1.maven.org/maven2/net/java/dev/jna/jna/4.2.2/jna-4.2.2.pom
+Source15  : https://repo1.maven.org/maven2/net/java/dev/jna/platform/3.4.0/platform-3.4.0.pom
+Source16  : https://repo1.maven.org/maven2/net/java/dev/jna/platform/3.5.2/platform-3.5.2.jar
+Source17  : https://repo1.maven.org/maven2/net/java/dev/jna/platform/3.5.2/platform-3.5.2.pom
+Source18  : https://repo1.maven.org/maven2/org/elasticsearch/jna/4.4.0-1/jna-4.4.0-1.jar
+Source19  : https://repo1.maven.org/maven2/org/elasticsearch/jna/4.4.0-1/jna-4.4.0-1.pom
+Source20  : https://repo1.maven.org/maven2/org/elasticsearch/jna/4.5.1/jna-4.5.1.jar
+Source21  : https://repo1.maven.org/maven2/org/elasticsearch/jna/4.5.1/jna-4.5.1.pom
 Summary  : Library supporting Foreign Function Interfaces
 Group    : Development/Tools
 License  : LGPL-2.1 MIT
@@ -65,38 +73,62 @@ cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/net/java/dev/jna/jna-pl
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/net/java/dev/jna/jna-platform/4.1.0
 cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/net/java/dev/jna/jna-platform/4.1.0/jna-platform-4.1.0.pom
 
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/net/java/dev/jna/jna-platform/4.2.2
+cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/net/java/dev/jna/jna-platform/4.2.2/jna-platform-4.2.2.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/net/java/dev/jna/jna-platform/4.2.2
+cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/net/java/dev/jna/jna-platform/4.2.2/jna-platform-4.2.2.pom
+
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/net/java/dev/jna/jna/4.1.0
-cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/net/java/dev/jna/jna/4.1.0/jna-4.1.0-sources.jar
+cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/net/java/dev/jna/jna/4.1.0/jna-4.1.0-sources.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/net/java/dev/jna/jna/3.4.0
-cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/net/java/dev/jna/jna/3.4.0/jna-3.4.0.pom
+cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/net/java/dev/jna/jna/3.4.0/jna-3.4.0.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/net/java/dev/jna/jna/3.5.2
-cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/net/java/dev/jna/jna/3.5.2/jna-3.5.2.jar
+cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/net/java/dev/jna/jna/3.5.2/jna-3.5.2.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/net/java/dev/jna/jna/3.5.2
-cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/net/java/dev/jna/jna/3.5.2/jna-3.5.2.pom
+cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/net/java/dev/jna/jna/3.5.2/jna-3.5.2.pom
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/net/java/dev/jna/jna/4.0.0
+cp %{SOURCE9} %{buildroot}/usr/share/java/.m2/repository/net/java/dev/jna/jna/4.0.0/jna-4.0.0.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/net/java/dev/jna/jna/4.0.0
+cp %{SOURCE10} %{buildroot}/usr/share/java/.m2/repository/net/java/dev/jna/jna/4.0.0/jna-4.0.0.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/net/java/dev/jna/jna/4.1.0
-cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/net/java/dev/jna/jna/4.1.0/jna-4.1.0.jar
+cp %{SOURCE11} %{buildroot}/usr/share/java/.m2/repository/net/java/dev/jna/jna/4.1.0/jna-4.1.0.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/net/java/dev/jna/jna/4.1.0
-cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/net/java/dev/jna/jna/4.1.0/jna-4.1.0.pom
+cp %{SOURCE12} %{buildroot}/usr/share/java/.m2/repository/net/java/dev/jna/jna/4.1.0/jna-4.1.0.pom
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/net/java/dev/jna/jna/4.2.2
+cp %{SOURCE13} %{buildroot}/usr/share/java/.m2/repository/net/java/dev/jna/jna/4.2.2/jna-4.2.2.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/net/java/dev/jna/jna/4.2.2
+cp %{SOURCE14} %{buildroot}/usr/share/java/.m2/repository/net/java/dev/jna/jna/4.2.2/jna-4.2.2.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/net/java/dev/jna/platform/3.4.0
-cp %{SOURCE9} %{buildroot}/usr/share/java/.m2/repository/net/java/dev/jna/platform/3.4.0/platform-3.4.0.pom
+cp %{SOURCE15} %{buildroot}/usr/share/java/.m2/repository/net/java/dev/jna/platform/3.4.0/platform-3.4.0.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/net/java/dev/jna/platform/3.5.2
-cp %{SOURCE10} %{buildroot}/usr/share/java/.m2/repository/net/java/dev/jna/platform/3.5.2/platform-3.5.2.jar
+cp %{SOURCE16} %{buildroot}/usr/share/java/.m2/repository/net/java/dev/jna/platform/3.5.2/platform-3.5.2.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/net/java/dev/jna/platform/3.5.2
-cp %{SOURCE11} %{buildroot}/usr/share/java/.m2/repository/net/java/dev/jna/platform/3.5.2/platform-3.5.2.pom
+cp %{SOURCE17} %{buildroot}/usr/share/java/.m2/repository/net/java/dev/jna/platform/3.5.2/platform-3.5.2.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/elasticsearch/jna/4.4.0-1
-cp %{SOURCE12} %{buildroot}/usr/share/java/.m2/repository/org/elasticsearch/jna/4.4.0-1/jna-4.4.0-1.jar
+cp %{SOURCE18} %{buildroot}/usr/share/java/.m2/repository/org/elasticsearch/jna/4.4.0-1/jna-4.4.0-1.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/elasticsearch/jna/4.4.0-1
-cp %{SOURCE13} %{buildroot}/usr/share/java/.m2/repository/org/elasticsearch/jna/4.4.0-1/jna-4.4.0-1.pom
+cp %{SOURCE19} %{buildroot}/usr/share/java/.m2/repository/org/elasticsearch/jna/4.4.0-1/jna-4.4.0-1.pom
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/elasticsearch/jna/4.5.1
+cp %{SOURCE20} %{buildroot}/usr/share/java/.m2/repository/org/elasticsearch/jna/4.5.1/jna-4.5.1.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/elasticsearch/jna/4.5.1
+cp %{SOURCE21} %{buildroot}/usr/share/java/.m2/repository/org/elasticsearch/jna/4.5.1/jna-4.5.1.pom
 
 
 %files
@@ -106,17 +138,25 @@ cp %{SOURCE13} %{buildroot}/usr/share/java/.m2/repository/org/elasticsearch/jna/
 %defattr(-,root,root,-)
 /usr/share/java/.m2/repository/net/java/dev/jna/jna-platform/4.1.0/jna-platform-4.1.0.jar
 /usr/share/java/.m2/repository/net/java/dev/jna/jna-platform/4.1.0/jna-platform-4.1.0.pom
+/usr/share/java/.m2/repository/net/java/dev/jna/jna-platform/4.2.2/jna-platform-4.2.2.jar
+/usr/share/java/.m2/repository/net/java/dev/jna/jna-platform/4.2.2/jna-platform-4.2.2.pom
 /usr/share/java/.m2/repository/net/java/dev/jna/jna/3.4.0/jna-3.4.0.pom
 /usr/share/java/.m2/repository/net/java/dev/jna/jna/3.5.2/jna-3.5.2.jar
 /usr/share/java/.m2/repository/net/java/dev/jna/jna/3.5.2/jna-3.5.2.pom
+/usr/share/java/.m2/repository/net/java/dev/jna/jna/4.0.0/jna-4.0.0.jar
+/usr/share/java/.m2/repository/net/java/dev/jna/jna/4.0.0/jna-4.0.0.pom
 /usr/share/java/.m2/repository/net/java/dev/jna/jna/4.1.0/jna-4.1.0-sources.jar
 /usr/share/java/.m2/repository/net/java/dev/jna/jna/4.1.0/jna-4.1.0.jar
 /usr/share/java/.m2/repository/net/java/dev/jna/jna/4.1.0/jna-4.1.0.pom
+/usr/share/java/.m2/repository/net/java/dev/jna/jna/4.2.2/jna-4.2.2.jar
+/usr/share/java/.m2/repository/net/java/dev/jna/jna/4.2.2/jna-4.2.2.pom
 /usr/share/java/.m2/repository/net/java/dev/jna/platform/3.4.0/platform-3.4.0.pom
 /usr/share/java/.m2/repository/net/java/dev/jna/platform/3.5.2/platform-3.5.2.jar
 /usr/share/java/.m2/repository/net/java/dev/jna/platform/3.5.2/platform-3.5.2.pom
 /usr/share/java/.m2/repository/org/elasticsearch/jna/4.4.0-1/jna-4.4.0-1.jar
 /usr/share/java/.m2/repository/org/elasticsearch/jna/4.4.0-1/jna-4.4.0-1.pom
+/usr/share/java/.m2/repository/org/elasticsearch/jna/4.5.1/jna-4.5.1.jar
+/usr/share/java/.m2/repository/org/elasticsearch/jna/4.5.1/jna-4.5.1.pom
 
 %files license
 %defattr(0644,root,root,0755)
