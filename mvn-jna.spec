@@ -4,7 +4,7 @@
 #
 Name     : mvn-jna
 Version  : 3.4.0
-Release  : 6
+Release  : 7
 URL      : https://github.com/java-native-access/jna/archive/3.4.0.tar.gz
 Source0  : https://github.com/java-native-access/jna/archive/3.4.0.tar.gz
 Source1  : https://repo.maven.apache.org/maven2/net/java/dev/jna/jna-platform/4.1.0/jna-platform-4.1.0.jar
